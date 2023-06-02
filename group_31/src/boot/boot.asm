@@ -1,3 +1,5 @@
+;This code is taken directly from the lecture notes: "lecture 2 - x86 and the bootloader"
+
 bits 32
 
 MBOOT_PAGE_ALIGN       equ 1<<0    ; Load kernel and modules on a page boundary
@@ -38,7 +40,7 @@ section .text
 global _start:function (_start.end - _start)
 _start:
 	mov esp, stack_top
-    ; extern init_multiboot
+  ; extern init_multiboot
 	; push ebx ; multiboot_info struct
 	; push eax ; magic number
 	; call init_multiboot

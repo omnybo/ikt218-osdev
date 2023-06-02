@@ -45,8 +45,8 @@ _start:
 	; push eax ; magic number
 	; call init_multiboot
 
-	extern init_gdt
-	call init_gdt
+	;extern init_gdt
+	;call init_gdt
 	extern kernel_main
 	call kernel_main  ; call our kernel_main() function.
 	cli

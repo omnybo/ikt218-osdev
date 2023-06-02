@@ -181,6 +181,11 @@ file(GLOB_RECURSE OS_MODULE_KERNEL_SOURCES
         src/kernel/screen/screen.cpp
         src/kernel/cpu/gdt/gdt.cpp
         src/kernel/cpu/gdt/gdt_start.asm
+        src/kernel/cpu/idt/idt.cpp
+        src/kernel/cpu/idt/idt_start.asm
+        #doesn't work so commented out theese files:
+        #src/kernel/cpu/isrs/isrs.c
+        #src/kernel/cpu/isrs/isrs_start.asm
 
 )
 # Set the output binary name

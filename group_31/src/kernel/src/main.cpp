@@ -16,12 +16,12 @@ extern "C"{
 void kernel_main(void) 
 {
 	terminal_initialize();
-  write_string("Hello World  ");
+  write_string("Hello World  \n");
 	
-  write_string("Initializing GDT  ");
+  write_string("Initializing GDT  \n");
   init_gdt;
 
-  write_string("Initializing IDT  ");
+  write_string("Initializing IDT  \n");
   init_idt;
 
   //write_string("Initializing ISRs");

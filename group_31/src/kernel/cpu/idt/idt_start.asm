@@ -1,4 +1,4 @@
-//This code is highly inspired by Bran's Kernel Development Tutorial and the code from lecture 4
+;This code is highly inspired by Bran's Kernel Development Tutorial and the code from lecture 4
 [Global idt_load]  ;allows our c code to acess the function idt_load()
 
 
